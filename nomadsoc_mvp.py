@@ -29,6 +29,7 @@ if public_wifi:
 password_protected = ask_yes_no("Is the Wi-Fi password-protected?")
 if not password_protected:
     risk_score += 2
+    risk_reasons.append("A Wi-Fi network without a password is riskier because anyone nearby may be able to join it.")
     recommendations.append("Open Wi-Fi is riskier because anyone nearby may be able to connect.")
 
 official_network = ask_yes_no("Are you sure this is the official network for the location?")
