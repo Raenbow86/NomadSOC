@@ -37,6 +37,18 @@ NomadSOC is designed to be educational, ethical, and practical. It does not scan
 * Plain-English explanation of why the score was assigned
 * Safety recommendations based on user answers
 
+## How to Run
+
+NomadSOC is currently a Python command-line tool.
+
+To run the program, open the project in a terminal and use:
+
+```bash
+python nomadsoc_mvp.py
+
+The program will ask a series of yes/no questions about the user’s Wi-Fi connection, device security, and planned activity. It then returns a risk score, a risk level, plain-English explanations, and safety recommendations.
+
+
 ## Core Concepts
 
 NomadSOC will eventually evaluate security across categories such as:
