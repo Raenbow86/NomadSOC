@@ -17,6 +17,7 @@ print("Welcome to NomadSOC")
 print("Let's check your public Wi-Fi risk.\n")
 
 risk_score = 0
+risk_reasons = []
 recommendations = []
 
 public_wifi = ask_yes_no("Are you using public or shared Wi-Fi?")
