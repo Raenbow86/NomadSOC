@@ -16,6 +16,27 @@ The goal is not to scare people.
 
 The goal is to teach people how to protect themselves.
 
+## What NomadSOC Does
+
+NomadSOC is a beginner-friendly cybersecurity tool that helps users think through the risks of using public or shared Wi-Fi.
+
+The tool asks simple yes/no questions about the user’s connection, device, and activity. Based on the answers, it calculates a risk score, gives a risk level, and explains why the score was assigned.
+
+NomadSOC is designed to be educational, ethical, and practical. It does not scan, attack, monitor, or collect traffic from any network. Instead, it helps users make safer decisions before logging into sensitive accounts on public Wi-Fi.
+
+## Current MVP Features
+
+* Public/shared Wi-Fi risk check
+* Wi-Fi password protection check
+* Official network verification check
+* VPN usage check
+* Sensitive activity warning
+* Device update check
+* Firewall check
+* Risk score result
+* Plain-English explanation of why the score was assigned
+* Safety recommendations based on user answers
+
 ## Core Concepts
 
 NomadSOC will eventually evaluate security across categories such as:
