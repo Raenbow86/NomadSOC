@@ -35,6 +35,7 @@ if not password_protected:
 official_network = ask_yes_no("Are you sure this is the official network for the location?")
 if not official_network:
     risk_score += 2
+    risk_reasons.append("Not being sure this is the official network increases risk because attackers can create fake Wi-Fi networks with similar names.") 
     recommendations.append("Double-check the network name with the business or location staff.")
 
 using_vpn = ask_yes_no("Are you using a VPN?")
