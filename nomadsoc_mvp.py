@@ -41,6 +41,7 @@ if not official_network:
 using_vpn = ask_yes_no("Are you using a VPN?")
 if not using_vpn:
     risk_score += 2
+    risk_reasons.append("Not using a VPN on public Wi-Fi can increase risk because your connection has less protection on an untrusted network.")
     recommendations.append("Use a VPN before logging into sensitive accounts.")
 
 sensitive_activity = ask_yes_no("Are you doing sensitive activity like banking, healthcare, school, legal, or work logins?")
