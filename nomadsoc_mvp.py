@@ -23,7 +23,7 @@ recommendations = []
 public_wifi = ask_yes_no("Are you using public or shared Wi-Fi?")
 if public_wifi:
     risk_score += 2
-        risk_reasons.append("Public or shared Wi-Fi increases risk because many different people may be using the same network.")
+    risk_reasons.append("Public or shared Wi-Fi increases risk because many different people may be using the same network.")
     recommendations.append("Be careful on public/shared Wi-Fi.")
 
 password_protected = ask_yes_no("Is the Wi-Fi password-protected?")
