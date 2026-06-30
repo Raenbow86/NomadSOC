@@ -59,6 +59,7 @@ if not device_updated:
 firewall_on = ask_yes_no("Is your firewall turned on?")
 if not firewall_on:
     risk_score += 1
+    risk_reasons.append("A disabled firewall increases risk because your device may have less protection from unwanted network traffic.")
     recommendations.append("Turn on your firewall for extra protection.")
 
 
