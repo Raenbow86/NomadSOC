@@ -47,6 +47,7 @@ if not using_vpn:
 sensitive_activity = ask_yes_no("Are you doing sensitive activity like banking, healthcare, school, legal, or work logins?")
 if sensitive_activity:
     risk_score += 3
+    risk_reasons.append("Sensitive activities like banking, healthcare, school, work, or legal accounts are higher risk on public Wi-Fi because they involve private personal information.")
     recommendations.append("Avoid sensitive activity unless your connection is protected.")
 
 device_updated = ask_yes_no("Is your device updated?")
