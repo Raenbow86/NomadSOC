@@ -53,6 +53,7 @@ if sensitive_activity:
 device_updated = ask_yes_no("Is your device updated?")
 if not device_updated:
     risk_score += 1
+    risk_reasons.append("An outdated device increases risk because it may be missing important security patches.")
     recommendations.append("Update your device when possible to reduce security risk.")
 
 firewall_on = ask_yes_no("Is your firewall turned on?")
