@@ -82,6 +82,10 @@ else:
 print(f"Result: {result}")
 print(f"Recommendation: {message}")
 
+print("\nWhy this score was assigned:")
+for reason in risk_reasons:
+    print(f"- {reason}")
+
 print("\nSafety Notes:")
 for recommendation in recommendations:
     print(f"- {recommendation}")
